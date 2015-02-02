@@ -1,3 +1,10 @@
+// Asks the user to enter their name.
+var userName = prompt("What's your name?");
+
+//Greets the user by his name!
+console.log("Hello " + userName + "!");
+
+
 // Check if the user is ready to play!
 confirm("I'm ready to play!");
 
@@ -7,11 +14,11 @@ var age = prompt("What's your age?");
 // Gives a warning if the user is too young and gives encouragement if the user is sufficiently old.
 if (age < 13)
 {
-    console.log("You are allowed to play but might be doomed ;)");
+    console.log(userName + ", you are allowed to play but might be doomed ;)");
 }
 else
 {
-    console.log("That's great! You are old enough to have a chance at winning at this game ;)");
+    console.log(userName + ", that's great! You are old enough to have a chance at winning at this game ;)");
 }
 
 // Starts the game.
@@ -39,9 +46,9 @@ var feedback = prompt("How did you the game so far? Please rate by entering a nu
 // Thanks the user for the feedback.
 if (feedback >= 8)
 {
-    console.log("Thank you! We should sing at the next concert!");
+    console.log("Thank you, " + userName + "! We should sing at the next concert!");
 }
 else
 {
-    console.log("Thank you, I'll keep practicing coding and singing!");
+    console.log("Thank you, " + userName + "! I'll keep practicing coding and singing!");
 }
